@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import { Container, Row } from 'react-bootstrap'
 import { products_0 } from '../products_folder/products'
@@ -17,7 +17,7 @@ const HomeScreen = ({ categoryItems, newArrivalItems }) => {
           <hr className='border border-primary ' />
         </div>
       </div>
-      {/* <Slideshow products_0={products_0} /> */}
+      <Slideshow products_0={products_0} />
       <div className='container my-5'>
         <div className='row'>
           <div className='col-12'>
