@@ -58,10 +58,10 @@ const CapScreen = () => {
                     <div xs={6} md={4} key={item._id} className='text-center'>
                       <Link to={`/categoryItems/${item.category}/${item._id}`}>
                         {item.countInStock === 0 ? (
-                          <>
-                            <div className='row justify-content-left'>
+                          <div position-relative>
+                            <div className='row position-absolute right-0'>
                               <div className='circle d-flex align-items-center justify-content-center'>
-                                <p className='circle-text position-absolute'>
+                                <p className='circle-text '>
                                   Sold
                                   <br /> Out
                                 </p>
@@ -72,7 +72,7 @@ const CapScreen = () => {
                               className='img-fluid component-images lighter'
                               style={{ height: '450px', width: 'auto' }}
                             />
-                          </>
+                          </div>
                         ) : (
                           <Image
                             src={item.image}

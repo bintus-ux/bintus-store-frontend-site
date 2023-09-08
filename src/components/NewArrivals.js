@@ -27,7 +27,7 @@ const NewArrivals = () => {
               to={`/categoryItems/${newArrival.category}/${newArrival._id}`}>
               {newArrival.countInStock === 0 ? (
                 <div position-relative>
-                  <div className='row position-absolute right-0'>
+                  <div className='row position-absolute'>
                     <div className='circle d-flex align-items-center justify-content-center'>
                       <p className='circle-text '>
                         Sold
@@ -37,27 +37,27 @@ const NewArrivals = () => {
                   </div>
                   <Image
                     src={newArrival.image}
-                    className='img-fluid component-images lighter'
-                    style={{ height: '350px', width: 'auto' }}
+                    className='img-fluid lighter'
+                    style={{ height: '450px', width: 'auto' }}
                   />
                 </div>
               ) : (
                 <Image
                   src={newArrival.image}
-                  className='img-fluid component-images darker'
-                  style={{ height: '350px', width: 'auto' }}
+                  className='img-fluid darker'
+                  style={{ height: '450px', width: 'auto' }}
                 />
               )}
             </Link>
 
-            <div>
+            <div className='justify-content-center' id='image-detail-wrapper'>
               <Link
                 to={`/categoryItems/${newArrival.category}/${newArrival._id}`}
                 style={{ textDecoration: 'none' }}>
                 <h4
                   style={{
                     color: 'black',
-                    width: '350px',
+                    width: '300px',
                   }}
                   className='text-capitalize my-3'>
                   {newArrival.name}
