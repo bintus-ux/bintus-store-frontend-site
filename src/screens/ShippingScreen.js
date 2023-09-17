@@ -19,6 +19,7 @@ const ShippingScreen = () => {
 
   const nigerianStates = [
     'Abia',
+    'Abuja',
     'Adamawa',
     'Akwa Ibom',
     'Anambra',
