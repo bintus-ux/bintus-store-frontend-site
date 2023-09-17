@@ -9,7 +9,7 @@ import {
 
 export const addToCart = (id, qty) => async (dispatch, getState) => {
   const { data } = await axios.get(
-    `https://clothin-line.onrender.com/api/categoryItems/caps/${id}`
+    `https://clothin-line.onrender.com/api/product/${id}`
   )
 
   dispatch({
