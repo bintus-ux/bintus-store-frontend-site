@@ -103,7 +103,8 @@ const CartScreen = () => {
                       <Image src={item.image} alt={item.name} fluid rounded />
                     </Col>
                     <Col md={5}>
-                      <Link to={`/categoryItems/${item.product}`}>
+                      <Link
+                        to={`/categoryItems/${item.category}/${item.product}`}>
                         <h3>{item.name}</h3>
                       </Link>
                       <p>Price/piece: ₦{item.price}</p>
